@@ -14,7 +14,7 @@ defmodule EchoServer do
     :cowboy_router.compile([
       {:_,
         [
-          {"/", EchoServer.WebsockerHandler, []}
+          {"/", EchoServer.WebsocketHandler, []}
         ]
       }
     ])
