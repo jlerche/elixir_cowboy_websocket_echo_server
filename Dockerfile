@@ -2,7 +2,7 @@ FROM bitwalker/alpine-elixir:1.5.2
 
 EXPOSE 8080
 
-
+WORKDIR /app/
 ADD . ./
 
 RUN mix deps.get
